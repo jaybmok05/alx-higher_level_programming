@@ -12,4 +12,3 @@ def uppercase(string):
             uppercase_char = char
         uppercase_string += uppercase_char
     print("{:s}".format(uppercase_string))
-
