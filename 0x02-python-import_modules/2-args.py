@@ -19,7 +19,10 @@ if __name__ == "__main__":
                 print("{:d} arguments:".format(args_len))
 
             while index <= args_len:
-                print("{:d}: {}".format(index, argv[index]))
+                if argv[index].isdigit():
+                    print("{:d}: {:d}".format(index, int(argv[index])))
+                else:
+                    print("{:d}: {:s}".format(index, argv[index]))
                 index += 1
 
 
