@@ -16,10 +16,10 @@ if __name__ == "__main__":
             if args_len == 1:
                 print("{:d} arguments:".format(args_len))
             else:
-               print("{:d} arguments:".format(args_len))
+                print("{:d} arguments:".format(args_len))
 
             while index <= args_len:
-                print("{:d}: {:s}".format(index, argv[index]))
+                print("{:d}: {}".format(index, argv[index]))
                 index += 1
 
 
