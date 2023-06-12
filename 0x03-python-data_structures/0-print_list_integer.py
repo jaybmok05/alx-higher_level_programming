@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
-def print_list_integer(arr):
+def print_list_integer(arr=[]):
 
-    for nums in arr:
-        print("{:d}".format(nums))
+    if arr is None or len(arr) == 0:
+        return None
+    else:
+        for nums in arr:
+            print("{:d}".format(nums))
