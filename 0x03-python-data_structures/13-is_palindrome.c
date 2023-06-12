@@ -11,20 +11,35 @@
 
 int is_palindrome(listint_t **head)
 {
-	listint_t *cur = NULL;
+	listint_t *slow = *head, *fast = *head, *prev = NULL;
+	listint_t *temp;
 
-	if (*head == NULL)
+	/*Find the middle of the linked list*/
+	while (fast != NULL && fast->next != NULL)
 	{
-		printf("hello");
-		return (1);
+		fast = fast->next->next;
+		temp = slow;
+		slow = slow->next;
+		temp->next = prev;
+		prev = temp;
+	}
+	
+	/* move the slow pointer one step ahead, if odd nums*/
+	if (fast != NULL)
+	{
+		slow = slow->next;
 	}
 
-	cur = *head;
-
-	while (cur->next != NULL)
+	/*Compare first and second half of the linked list*/
+	while (prev != NULL && slow != NULL)
 	{
-		printf("%d", cur->n);
-		cur = cur->next;
+		if (prev->n != slow->n)
+		{
+			return 0;
+		}
+		prev = prev->next;
+		slow = slow->next;
 	}
-	return (1);
+	
+	return 1;
 }
