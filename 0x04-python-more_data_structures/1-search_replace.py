@@ -9,5 +9,5 @@ def search_replace(my_list, search, replace):
         if new_list[index] == search:
             new_list[index] = replace
         index += 1
-    
+
     return new_list
