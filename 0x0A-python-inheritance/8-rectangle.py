@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-    Implementing a Geometry class
+Implementing a Geometry class
 '''
 
 
