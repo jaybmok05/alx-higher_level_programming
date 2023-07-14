@@ -3,7 +3,7 @@
 import json
 
 
-def to_json_string(my_obj):
+def from_json_string(my_obj):
     '''
     a function that returns the JSON representation
     of an object (string).
