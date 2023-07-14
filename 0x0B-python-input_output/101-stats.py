@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+'''Module to print from the stdin'''
 import sys
 
 
