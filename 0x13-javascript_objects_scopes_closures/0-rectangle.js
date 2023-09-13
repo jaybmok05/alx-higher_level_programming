@@ -1,5 +1,5 @@
 #!/usr/bin/node
-//Defining class Rectangle
+// Defining class Rectangle
 
 class Rectangle {
 }
